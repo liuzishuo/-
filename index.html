@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训H5</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="css\删除.css">
+    <!-- swiper封装好的css插件 -->
+    <link rel="stylesheet" href="css\swiper.min.css">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="css\index.css">
+
+
+</head>
+
+<body>
+    <!-- HTML5新增标签 header -->
+    <!-- header begin -->
+    <header>
+        <h1 class="logo">
+            <a href="#"></a>
+
+        </h1>
+        <div class="menu">
+            <span class="icon-menu"></span>
+
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- swiper begin -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../珠峰手机端/images/珠峰培训微信小程序课程等你来学~.png" alt=""></div>
+            <div class="swiper-slide"><img src="../珠峰手机端/images/珠峰培训微信小程序课程等你来学~.png" alt=""></div>
+            <div class="swiper-slide"><img src="../珠峰手机端/images/珠峰培训微信小程序课程等你来学~.png" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- swiper end -->
+    <!-- main beign -->
+    <main>
+        <section>
+            <div class="item">
+                <a href=""></a>
+                <div class="pic">
+                    <img src="../珠峰手机端/images/Layer 21.png" alt="">
+
+                </div>
+                <div class="txt">
+                    <h2>Vue.js从理论精讲到项目实战课程</h2>
+                    <p>￥5000.00元</p>
+
+                </div>
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <div class="pic">
+                    <img src="../珠峰手机端/images/Layer 21.png" alt="">
+
+                </div>
+                <div class="txt">
+                    <h2>Vue.js从理论精讲到项目实战课程</h2>
+                    <p>￥5000.00元</p>
+
+                </div>
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <div class="pic">
+                    <img src="../珠峰手机端/images/Layer 21.png" alt="">
+
+                </div>
+                <div class="txt">
+                    <h2>Vue.js从理论精讲到项目实战课程</h2>
+                    <p>￥5000.00元</p>
+
+                </div>
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <div class="pic">
+                    <img src="../珠峰手机端/images/Layer 21.png" alt="">
+
+                </div>
+                <div class="txt">
+                    <h2>Vue.js从理论精讲到项目实战课程</h2>
+                    <p>￥5000.00元</p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- main end -->
+    <!-- 底部 begin -->
+    <div class="floor">
+            <a href="#" class="leftpic"><span><img src="../珠峰手机端/images/首页图标.png" alt="" class="pic1"></span><p class="word1">首页</p></a>
+            <a href="#" class="centerpic"><span><img src="../珠峰手机端/images/我的课程.png" alt="" class="pic2"></span><p class="word2">我的课堂</p></a>
+            <a href="#" class="rightpic"><span><img src="../珠峰手机端/images/个人中心.png" alt="" class="pic3"></span><p class="word3"> 个人中心</p></a>
+        </div>
+        <!-- 底部 end -->
+
+    <script src="js/swiper.min.js"></script>
+
+    <script type="text/javascript">
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+
+    </script>
+    
+</body>
+
+</html>
